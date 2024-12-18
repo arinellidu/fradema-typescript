@@ -26,13 +26,13 @@ export function HomeMinimalUI({ sx, ...other }: BoxProps) {
     <Box sx={{ p: { md: 10 }, textAlign: { xs: 'center', md: 'left' } }}>
       <m.div variants={variants}>
         <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-          Looking For a
+          Procurando por
         </Typography>
       </m.div>
 
       <m.div variants={variants}>
         <Typography variant="h3" sx={{ my: 3 }}>
-          Dashboard template?
+          Nossos Serviços ?
         </Typography>
       </m.div>
 
@@ -40,7 +40,7 @@ export function HomeMinimalUI({ sx, ...other }: BoxProps) {
         <Typography
           sx={{ maxWidth: 360, color: 'text.secondary', mx: { xs: 'auto', md: 'unset' } }}
         >
-          Minimal UI Kit is a professional dashboard used by many of our clients.
+          A Fradema atende seus clientes com excelência.
         </Typography>
       </m.div>
 
@@ -51,11 +51,11 @@ export function HomeMinimalUI({ sx, ...other }: BoxProps) {
           variant="outlined"
           target="_blank"
           rel="noopener"
-          href={paths.minimalStore}
+          href={'#'}
           endIcon={<Iconify width={16} icon="solar:alt-arrow-right-outline" />}
           sx={{ mt: 5, mb: { xs: 5, md: 0 } }}
         >
-          Visit Minimal UI
+          Veja alguns de nossos clientes!
         </Button>
       </m.div>
     </Box>
@@ -71,9 +71,9 @@ export function HomeMinimalUI({ sx, ...other }: BoxProps) {
         sx={(theme) => ({
           width: 480,
           borderRadius: 2,
-          filter: `drop-shadow(0px 48px 80px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.24)})`,
+          filter: `drop-shadow(0px 48px 80px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.34)})`,
           ...theme.applyStyles('dark', {
-            filter: `drop-shadow(0px 48px 80px ${varAlpha(theme.vars.palette.common.blackChannel, 0.48)})`,
+            filter: `drop-shadow(0px 48px 80px ${varAlpha(theme.vars.palette.common.blackChannel, 0.68)})`,
           }),
           [theme.breakpoints.up('md')]: {
             top: 0,

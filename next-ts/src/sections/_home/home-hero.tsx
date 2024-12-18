@@ -25,7 +25,7 @@ export function HomeHero({ sx, ...other }: BoxProps) {
     <>
       <m.div variants={variants}>
         <Typography variant="h1">
-          Create your <br /> website today with
+          Agende com <br /> um consultor ainda hoje!
           <Box
             component="span"
             sx={(theme) => ({
@@ -34,16 +34,13 @@ export function HomeHero({ sx, ...other }: BoxProps) {
               ),
             })}
           >
-            {` ZONE`}
+            {` FRADEMA`}
           </Box>
         </Typography>
       </m.div>
 
       <m.div variants={variants}>
-        <Typography sx={{ maxWidth: 480 }}>
-          The ZONE UI is built on top of MUI, a powerful library that provides flexible,
-          customizable, and easy-to-use components.
-        </Typography>
+        <Typography sx={{ maxWidth: 480 }}></Typography>
       </m.div>
     </>
   );

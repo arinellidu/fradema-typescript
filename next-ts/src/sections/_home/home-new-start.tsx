@@ -54,7 +54,6 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
 
           <m.div variants={variants}>
             <Typography variant="h2">
-              The
               <Box
                 component="span"
                 sx={(theme) => ({
@@ -63,17 +62,13 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
                   ),
                 })}
               >
-                {` ZONE `}
+                {` FRADEMA `}
               </Box>
-              UI Kit
             </Typography>
           </m.div>
 
           <m.div variants={variants}>
-            <Typography sx={{ color: 'text.secondary', maxWidth: 480 }}>
-              Modern ui kit to save your time, boost your creativity. Neat and super stylish layout
-              ready to help with your projects
-            </Typography>
+            <Typography sx={{ color: 'text.secondary', maxWidth: 480 }}></Typography>
           </m.div>
         </Box>
       </Container>

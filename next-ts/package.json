@@ -1,8 +1,8 @@
 {
-  "name": "@zone-kit/next-ts",
-  "author": "Minimals",
-  "version": "3.1.0",
-  "description": "Next & TypeScript",
+  "name": "fradema-web",
+  "author": "Patrick Arinelli",
+  "version": "v1.0",
+  "description": "Next & TypeScript Fradema Web",
   "private": true,
   "scripts": {
     "dev": "next dev -p 8002",

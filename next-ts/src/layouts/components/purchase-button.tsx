@@ -36,14 +36,15 @@ export function PurchaseButton({ slotProps, sx }: PurchaseButtonProps) {
           `linear-gradient(135deg, ${varAlpha(theme.vars.palette.primary.mainChannel, 0.04)}, ${varAlpha(theme.vars.palette.warning.mainChannel, 0.04)})`,
         primaryBorder: {
           size: 32,
-          width: '2px',
+          width: '4px',
           sx: (theme) => ({
-            color: theme.vars.palette.primary.main,
+            color: theme.vars.palette.info.main,
           }),
         },
         secondaryBorder: {
+          width: '4px',
           sx: (theme) => ({
-            color: theme.vars.palette.warning.main,
+            color: theme.vars.palette.info.main,
           }),
         },
       }}
@@ -61,7 +62,7 @@ export function PurchaseButton({ slotProps, sx }: PurchaseButtonProps) {
             : [slotProps?.button?.sx]),
         ]}
       >
-        Purchase
+        Contato
       </Button>
     </AnimateBorder>
   );

@@ -38,7 +38,7 @@ export function SupportHero({ sx, ...other }: BoxProps) {
       <Typography variant="h2" sx={{ textAlign: 'center', color: 'common.white', mb: 5 }}>
         Welcome to <br />
         <Box component="span" sx={{ color: 'primary.main' }}>
-          {`ZONE `}
+          {`FRADEMA `}
         </Box>
         support
       </Typography>

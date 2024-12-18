@@ -23,7 +23,6 @@ import { _pricingHome } from 'src/_mock';
 import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll-progress';
 
 import { HomeFAQs } from '../home-faqs';
-import { HomePricing } from '../home-pricing';
 import { HomeMinimalUI } from '../home-combination';
 import { HomeForDesigner } from '../home-for-designer';
 import { HomeAdvertisement } from '../home-advertisement';
@@ -63,8 +62,6 @@ export function HomeView() {
       <HomeFeatureHighlights />
 
       <HomeForDesigner />
-
-      <HomePricing plans={_pricingHome} />
 
       <HomeFAQs />
 
