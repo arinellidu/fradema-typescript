@@ -53,7 +53,7 @@ export function PurchaseButton({ slotProps, sx }: PurchaseButtonProps) {
         variant="text"
         target="_blank"
         rel="noopener"
-        href={paths.zoneStore}
+        href={'#'}
         {...slotProps?.button}
         sx={[
           { px: 2, borderRadius: 'inherit' },

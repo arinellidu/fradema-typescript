@@ -19,14 +19,15 @@ export function SettingsButton({ sx, ...other }: SettingsButtonProps) {
 
   return (
     <IconButton
-      color="inherit"
+      color="info"
       aria-label="settings"
       onClick={settings.onToggleDrawer}
       sx={[{ p: 0, width: 40, height: 40 }, ...(Array.isArray(sx) ? sx : [sx])]}
       {...other}
     >
-      <Badge color="error" variant="dot" invisible={!settings.canReset}>
+      <Badge color="info" variant="dot" invisible={!settings.canReset}>
         <SvgIcon
+          color="info"
           viewBox="0 0 32 32"
           component={m.svg}
           animate={{ rotate: 360 }}

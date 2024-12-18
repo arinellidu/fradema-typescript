@@ -22,42 +22,50 @@ export function Searchbar({ sx, ...other }: SearchbarProps) {
   const { value: open, onFalse: onClose, onTrue: onOpen } = useBoolean();
 
   return (
-    <ClickAwayListener onClickAway={onClose}>
-      <div>
-        <IconButton color="inherit" aria-label="Search button" onClick={onOpen} sx={sx} {...other}>
-          <SvgIcon viewBox="0 0 32 32" sx={{ width: 22, height: 22 }}>
-            <path
-              fill="currentColor"
-              d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9"
-            />
-          </SvgIcon>
-        </IconButton>
+    <>
+      {/* <ClickAwayListener onClickAway={onClose}>
+        <div>
+          <IconButton
+            color="inherit"
+            aria-label="Search button"
+            onClick={onOpen}
+            sx={sx}
+            {...other}
+          >
+            <SvgIcon viewBox="0 0 32 32" sx={{ width: 22, height: 22 }}>
+              <path
+                fill="currentColor"
+                d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9"
+              />
+            </SvgIcon>
+          </IconButton>
 
-        <Slide direction="down" in={open} mountOnEnter unmountOnExit>
-          <SearchBarRoot>
-            <InputBase
-              autoFocus
-              fullWidth
-              placeholder="Search…"
-              startAdornment={
-                <InputAdornment position="start">
-                  <Iconify icon="carbon:search" sx={{ color: 'text.disabled' }} />
-                </InputAdornment>
-              }
-              inputProps={{ id: 'search-input' }}
-              sx={{
-                [`& .${inputBaseClasses.input}`]: {
-                  fontWeight: 'fontWeightSemiBold',
-                },
-              }}
-            />
-            <Button variant="contained" onClick={onClose}>
-              Search
-            </Button>
-          </SearchBarRoot>
-        </Slide>
-      </div>
-    </ClickAwayListener>
+          <Slide direction="down" in={open} mountOnEnter unmountOnExit>
+            <SearchBarRoot>
+              <InputBase
+                autoFocus
+                fullWidth
+                placeholder="Search…"
+                startAdornment={
+                  <InputAdornment position="start">
+                    <Iconify icon="carbon:search" sx={{ color: 'text.disabled' }} />
+                  </InputAdornment>
+                }
+                inputProps={{ id: 'search-input' }}
+                sx={{
+                  [`& .${inputBaseClasses.input}`]: {
+                    fontWeight: 'fontWeightSemiBold',
+                  },
+                }}
+              />
+              <Button variant="contained" onClick={onClose}>
+                Search
+              </Button>
+            </SearchBarRoot>
+          </Slide>
+        </div>
+      </ClickAwayListener> */}
+    </>
   );
 }
 
