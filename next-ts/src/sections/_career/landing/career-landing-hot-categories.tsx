@@ -3,11 +3,10 @@ import type { IJobByCategoryProps } from 'src/types/job';
 
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Button from '@mui/material/Button';
+
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import { Iconify } from 'src/components/iconify';
 import { SvgColor } from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
@@ -103,11 +102,11 @@ function CategoryItem({ category }: CategoryItemProps) {
         <SvgColor src={category.icon} sx={{ width: 40, height: 40 }} />
       </Box>
 
-      <Typography variant="h6" noWrap sx={{ px: 3, width: 1 }}>
+      <Typography variant="h6" noWrap sx={{ px: 2, width: 1 }}>
         {category.name}
       </Typography>
       <Typography variant="body2" sx={{ mt: 0.5, color: 'text.disabled' }}>
-        {category.totalJobs} jobs
+        {/* {category.totalJobs} jobs */}
       </Typography>
     </Paper>
   );
