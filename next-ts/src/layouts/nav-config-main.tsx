@@ -108,7 +108,7 @@ export const pageLinks = [
 
 export const navData = [
   { title: 'Home', path: '/' },
-  { title: 'Filiais', path: paths.marketing.caseStudies },
-  { title: 'Pages', path: paths.pages, children: pageLinks },
+  { title: 'Filiais', path: '/' }, // paths.marketing.caseStudies
+  { title: 'Pages', path: '/' }, // paths.pages, children: pageLinks
   { title: 'Blog', path: '#' },
 ];

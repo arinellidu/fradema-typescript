@@ -23,45 +23,70 @@ import { varFade, MotionViewport } from 'src/components/animate';
 
 const FAQs = [
   {
-    question: 'How can I get the update?',
+    question: 'Qual a diferença entre tributos, impostos e taxas?',
     answer: (
       <Typography>
-        You will get 12 months of free
-        <Link
+        Conforme disposto no artigo 3º do Código Tributário Nacional (CTN),{' '}
+        <strong>
+          tributo é “toda prestação pecuniária compulsória, em moeda ou cujo valor nela se possa
+          exprimir, que não constitua sanção de ato ilícito, instituída em lei e cobrada mediante
+          atividade administrativa plenamente vinculada”.
+        </strong>{' '}
+        A CF em seus arts. 145, 149, 149-A, classifica os tributos pela Pentapartição (impostos,
+        taxas, contribuições de melhoria, empréstimos compulsórios e contribuições especiais). E o
+        CTN em seu art. 5º segue a teoria da Tripartição (impostos, taxas e contribuições de
+        melhoria): “Os tributos são impostos, taxas e contribuições de melhoria”. O imposto é
+        considerado o tributo mais importante, estando disposto no artigo 16º do CTN, imposto “é o
+        tributo cuja obrigação tem por fato gerador uma situação independente de qualquer atividade
+        estatal específica, relativa ao contribuinte”. Dentre os principais impostos do Brasil,
+        podemos citar: Imposto s/Circulação de Mercadorias e Serviços (ICMS), Imposto sobre a
+        Propriedade de Veículos Automotores (IPVA), Imposto sobre a Propriedade Predial e
+        Territorial Urbana (IPTU), Imposto sobre a Renda e Proventos de Qualquer Natureza (IR –
+        pessoa física e jurídica), Imposto sobre Operações de Crédito (IOF), Imposto sobre Serviços
+        de Qualquer Natureza (ISS). Já de acordo com o artigo 77º do CTN, taxa é um tributo “que tem
+        como fato gerador o exercício regulador do poder de polícia, ou a utilização efetiva e
+        potencial, de serviço público específico e divisível”. – Taxa de Emissão de Documentos
+        (níveis municipais, estaduais e federais), Taxa de Licenciamento Anual de Veículo, Taxas do
+        Registro do Comércio (Juntas Comerciais), Taxa cobrada para registro do Contrato Social de
+        uma empresa.
+        {/* <Link
           href="https://support.mui.com/hc/en-us/articles/360008775240-How-do-I-get-access-to-an-item-I-purchased"
           target="_blank"
           rel="noopener"
           sx={{ mx: 0.5 }}
         >
           updates
-        </Link>
-        with the purchase. Please renew your license to get updates after that.
+        </Link> */}
       </Typography>
     ),
   },
   {
-    question: 'Which license is right for you?',
+    question: 'Como faço para pagar menos imposto?',
     answer: (
       <Box component="ul" sx={{ pl: 3, listStyleType: 'disc' }}>
-        <li> All licenses do not apply to open source.</li>
-        <li> One licenses / one end product (3 licenses / 3 products...).</li>
+        <Typography>Neste caso o ideal é: </Typography>
         <li>
-          <strong>Standard / Plus</strong> license used in free products (Internal management...).
+          {' '}
+          Analisar o melhor regime tributário que poderá ser feito à partir de uma Auditoria Fiscal
+          com base nas informações prestadas aos órgãos federais, estaduais e/ou municipais.
         </li>
         <li>
-          <strong>Extended</strong> license used in charge products, collect fees from users
-          (SAAS...).
+          {' '}
+          Marcar uma reunião presencial para conseguir entender as reais intenções dos empresários,
+          bem como a rotina empresarial para uma melhor análise..
         </li>
         <li>
-          Learn more about the
-          <Link
-            href="https://zone-docs.vercel.app/package"
-            target="_blank"
-            rel="noopener"
-            sx={{ mx: 0.5 }}
-          >
-            package & license
+          <strong>Fase 3</strong>
+        </li>
+        <li>
+          <strong>Fase 4</strong>
+        </li>
+        <li>
+          Para mais dúvidas, entre em
+          <Link href="#" target="_blank" rel="noopener" sx={{ mx: 0.5 }} color="info">
+            contato
           </Link>
+          .
         </li>
       </Box>
     ),
@@ -81,12 +106,7 @@ const FAQs = [
       <Typography>
         {`The components in MUI are designed to work in the latest, stable releases of all major browsers, including Chrome, Firefox, Safari, and Edge. We don't support Internet Explorer 11. `}
         Learn more about the
-        <Link
-          href="https://mui.com/material-ui/getting-started/supported-platforms/"
-          target="_blank"
-          rel="noopener"
-          sx={{ mx: 0.5 }}
-        >
+        <Link href="#" target="_blank" rel="noopener" sx={{ mx: 0.5 }} color="info">
           supported platforms
         </Link>
       </Typography>
@@ -107,12 +127,7 @@ const FAQs = [
     answer: (
       <Typography>
         Yes, you can check out our
-        <Link
-          href="https://mui.com/store/items/minimal-dashboard-free/"
-          target="_blank"
-          rel="noopener"
-          sx={{ mx: 0.5 }}
-        >
+        <Link href="#" target="_blank" rel="noopener" sx={{ mx: 0.5 }} color="info">
           open source
         </Link>
         dashboard template which should give you an overview of the code quality and folder
@@ -172,7 +187,7 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
           <Grid size={{ xs: 12, md: 8 }}>
             <m.div variants={variants}>
               <Typography variant="h2" sx={{ textAlign: 'center' }}>
-                Frequently asked questions
+                Perguntas Frequentes
               </Typography>
             </m.div>
 
@@ -193,24 +208,29 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
             >
               <m.div variants={variants}>
                 <Typography component="h6" variant="h3">
-                  Still have questions?
+                  Tem mais dúvidas?
                 </Typography>
               </m.div>
 
               <m.div variants={variants}>
                 <Typography sx={{ color: 'text.secondary' }}>
-                  Please describe your case to receive the most accurate advice.
+                  Entre em contato com um de nossos especialistas!
                 </Typography>
               </m.div>
 
               <m.div variants={variants}>
                 <Button
                   size="large"
-                  color="inherit"
+                  color="info"
                   variant="contained"
-                  href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
+                  href="mailto:yasmin@fradema.com.br?subject=Dúvida Cliente: &cc=ti4@fradema.com.br&body=Olá, me chamo... e gostaria de esclarecer uma dúvida..."
                 >
-                  Contact us
+                  Email
+                </Button>
+              </m.div>
+              <m.div>
+                <Button size="large" color="info" variant="contained" href="#">
+                  WhatsApp
                 </Button>
               </m.div>
             </Box>

@@ -45,7 +45,7 @@ export function HomeForDesigner({ sx, ...other }: BoxProps) {
       <MotionViewport>
         <m.div variants={variants}>
           <Typography variant="overline" sx={{ opacity: 0.48 }}>
-            Professional Kit
+            Botar foto de fundo tirada pelo marketing...
           </Typography>
         </m.div>
 
@@ -54,13 +54,13 @@ export function HomeForDesigner({ sx, ...other }: BoxProps) {
             variant="h2"
             sx={(theme) => ({
               ...theme.mixins.textGradient(
-                `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
+                `90deg, ${theme.vars.palette.info.main} 20%, ${theme.vars.palette.secondary.main} 100%`
               ),
               mt: 2,
               mb: 5,
             })}
           >
-            For designer
+            Nossa Equipe
           </Typography>
         </m.div>
 
@@ -83,13 +83,13 @@ const renderActionButton = () => (
     duration={12}
     slotProps={{
       outlineColor: (theme) =>
-        `linear-gradient(135deg, ${varAlpha(theme.vars.palette.primary.mainChannel, 0.04)}, ${varAlpha(theme.vars.palette.warning.mainChannel, 0.04)})`,
+        `linear-gradient(135deg, ${varAlpha(theme.vars.palette.info.mainChannel, 0.44)}, ${varAlpha(theme.vars.palette.info.mainChannel, 0.44)})`,
       primaryBorder: {
         size: 50,
-        width: '1.5px',
-        sx: (theme) => ({ color: theme.vars.palette.primary.main }),
+        width: '3px',
+        sx: (theme) => ({ color: theme.vars.palette.info.main }),
       },
-      secondaryBorder: { sx: (theme) => ({ color: theme.vars.palette.warning.main }) },
+      secondaryBorder: { sx: (theme) => ({ color: theme.vars.palette.info.main }) },
     }}
   >
     <Button
@@ -97,11 +97,11 @@ const renderActionButton = () => (
       variant="text"
       target="_blank"
       rel="noopener"
-      href={paths.figmaUrl}
+      href={'#'}
       endIcon={<Iconify icon="eva:arrow-ios-forward-fill" />}
-      sx={{ px: 2, borderRadius: 'inherit' }}
+      sx={{ px: 4, borderRadius: 'inherit' }}
     >
-      Checkout workspace
+      Sobre nossos colaboradores
     </Button>
   </AnimateBorder>
 );

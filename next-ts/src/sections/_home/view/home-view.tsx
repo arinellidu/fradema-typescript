@@ -25,9 +25,8 @@ import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll
 import { HomeFAQs } from '../home-faqs';
 import { HomeMinimalUI } from '../home-combination';
 import { HomeForDesigner } from '../home-for-designer';
-import { HomeAdvertisement } from '../home-advertisement';
+
 import { HomeFeatureHighlights } from '../home-feature-highlights';
-import { HomeFlexibleComponents } from '../home-flexible-components';
 
 import { MarketingServicesHowItWork } from 'src/sections/_marketing/services/marketing-services-how-it-work';
 
@@ -55,8 +54,6 @@ export function HomeView() {
 
       <CareerLandingHotCategories categories={_jobsByCategories} />
 
-      <HomeFlexibleComponents />
-
       <EcommerceLandingHero />
 
       <HomeFeatureHighlights />
@@ -66,8 +63,6 @@ export function HomeView() {
       <HomeFAQs />
 
       <HomeMinimalUI />
-
-      <HomeAdvertisement />
     </>
   );
 }
@@ -81,7 +76,7 @@ type BackToTopProps = FabProps & {
 function BackToTopButton({ isVisible, sx, ...other }: BackToTopProps) {
   return (
     <Fab
-      aria-label="Back to top"
+      aria-label="Voltar ao topo"
       sx={[
         (theme) => ({
           width: 48,
